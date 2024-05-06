@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <input
     type="button"
-    value="背景色を変更"
+    value="opener ウインドウの背景色を変更"
     onclick='<?= $window_name ?>.document.body.style.backgroundColor="#c0c0c0";window.focus();'
     class="btn btn-secondary ms-4">
 

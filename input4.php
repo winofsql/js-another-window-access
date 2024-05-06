@@ -1,4 +1,4 @@
-<?php 
+<?php
 $view_head_height = 150;
 
 ?>
@@ -23,24 +23,24 @@ $view_head_height = 150;
     <input
       type="button"
       value="IFRAME を開く"
-      onclick='document.body.style.backgroundColor = "#ffffff";iframe.src = "parent.php";iframe.style.display = "block"'
+      onclick='iframe.src = "parent.php";iframe.style.display = "block";document.getElementById("main").style.backgroundColor="#ffffff"'
       class="btn btn-primary">
     <input
       type="button"
       value="背景色変更"
-      onclick='iframe.contentWindow.document.body.style.backgroundColor="#000000";'
+      onclick='iframe.contentWindow.document.body.style.backgroundColor="#000000";;document.getElementById("main").style.backgroundColor="#ffffff"'
       class="btn btn-secondary ms-4">
-    <input 
+    <input
       type="submit"
       value="IFRAME 内に送信"
       id="send_button"
       name="send"
-      onclick='document.body.style.backgroundColor = "#ffffff";'
+      onclick='document.getElementById("main").style.backgroundColor="#ffffff"'
       class="btn btn-primary ms-4">
     <input
       type="button"
       value="背景色変更"
-      onclick='iframe.contentWindow.document.body.style.backgroundColor="#c0c0c0";'
+      onclick='iframe.contentWindow.document.body.style.backgroundColor="#c0c0c0";;document.getElementById("main").style.backgroundColor="#ffffff"'
       class="btn btn-secondary ms-4">
   </form>
 </div>

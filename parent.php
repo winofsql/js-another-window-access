@@ -20,8 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <input
     type="button"
-    value="背景色を変更"
-    onclick='parent.document.body.style.backgroundColor="#c0c0c0";'
+    value="parent ウインドウの背景色を変更"
+    onclick='parent.document.getElementById("main").style.backgroundColor="#c0c0c0";'
     class="btn btn-secondary ms-4">
 
 </div>
